@@ -1,3 +1,13 @@
+INSERT INTO tb_users (email, password) VALUES ('ana@gmail.com', '$2a$10$eACCYoNOHEqXve8aIWT8Nu3PkMXWBaOxJ9aORUYzfMQCbVBIhZ8tG');
+INSERT INTO tb_users (email, password) VALUES ('bob@gmail.com', '$2a$10$eACCYoNOHEqXve8aIWT8Nu3PkMXWBaOxJ9aORUYzfMQCbVBIhZ8tG');
+
+INSERT INTO tb_roles (authority) VALUES ('ROLE_OPERATOR');
+INSERT INTO tb_roles (authority) VALUES ('ROLE_ADMIN');
+
+INSERT INTO tb_users_roles (user_id, role_id) VALUES (1, 1);
+INSERT INTO tb_users_roles (user_id, role_id) VALUES (2, 1);
+INSERT INTO tb_users_roles (user_id, role_id) VALUES (2, 2);
+
 INSERT INTO tb_department(name) VALUES ('Sales');
 INSERT INTO tb_department(name) VALUES ('Management');
 INSERT INTO tb_department(name) VALUES ('Training');
@@ -16,23 +26,3 @@ INSERT INTO tb_employee(name, email, department_id) VALUES ('Tiago', 'tiago@gmai
 INSERT INTO tb_employee(name, email, department_id) VALUES ('Andressa', 'andressa@gmail.com', 2);
 INSERT INTO tb_employee(name, email, department_id) VALUES ('Meire', 'meire@gmail.com', 3);
 INSERT INTO tb_employee(name, email, department_id) VALUES ('Carol', 'carol@gmail.com', 1);
-
-
-INSERT INTO tb_users(id, firstName, lastName, username, password) VALUES (1, "Luan", "Pereira", "luan@gmail.com", "123456");
-INSERT INTO tb_users(id, firstName, lastName, username, password) VALUES (2, "Ana", "Lucia", "ana@gmail.com", "123456");
-INSERT INTO tb_users(id, firstName, lastName, username, password) VALUES (3, "Bob", "Green", "bob@gmail.com", "123456");
-
-INSERT INTO tb_roles(id, authority) VALUES (1, "OPERATOR");
-INSERT INTO tb_roles(id, authority) VALUES(2,"ADMIN");
-
-INSERT INTO users_roles(user_id, role_id) VALUES(1,1)
-INSERT INTO users_roles(user_id, role_id) VALUES(1,2)
-INSERT INTO users_roles(user_id, role_id) VALUES (2, 1);
-INSERT INTO users_roles(user_id, role_id) VALUES(3,1)
-INSERT INTO users_roles(user_id, role_id) VALUES(3,2)
-
-
-
-
-
-
